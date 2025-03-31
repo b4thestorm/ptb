@@ -1,22 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Typography } from '@mui/material';
+import VoiceRecorder from './components/voiceRecorder';
 
 function App() {
+  
+
   return (
     <div className="App">
       <header className="App-header">
+      <Typography variant={"h1"}>Pop the Balloon</Typography>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* //Make A Container */}
+        <VoiceRecorder></VoiceRecorder>
       </header>
     </div>
   );
